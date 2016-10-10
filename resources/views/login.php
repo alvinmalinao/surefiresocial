@@ -4,7 +4,7 @@
 	</head>
 	
 	<body>
-		<form action="/createuser" method="post">
+		<form action="/login" method="post">
 			<input type="hidden" name="_token" value="<?php echo csrf_token();?>" />
 			<table>
 				<tr>
@@ -17,7 +17,7 @@
 				</tr>
 				<tr>
 					<td colspan='2' style="text-align:center;">
-						<a href="/register">Register</a> or <a href="/login">Login</a>
+						<a href="/register">Register</a> or <input type="submit" value="Login" />
 					</td>
 				</tr>
 			</table>
